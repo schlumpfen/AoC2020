@@ -1,4 +1,4 @@
-
+import AoClib.*;
 /**
  * Beschreiben Sie hier die Klasse Tag03.
  * 
@@ -17,6 +17,11 @@ public class Tag03
     {
         // Instanzvariable initialisieren
         x = 0;
+        try {
+            Dateileser a = new Dateileser("03");
+        }
+        catch(IOException ex){
+        }
     }
 
     /**
