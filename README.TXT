@@ -2,6 +2,6 @@ PROJEKTBEZEICHNUNG: Advent of Code Masterdatei
 PROJEKTZWECK: Lösung zu den Aufgaben 
 VERSION oder DATUM: 2020.12.01
 WIE IST DAS PROJEKT ZU STARTEN: main()
-AUTOR(EN): Stefan Roschewitz
+AUTOR(EN): Stefan 
 BENUTZERHINWEISE:
 
