@@ -6,14 +6,14 @@ import java.util.*;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class AoC2019_06
+public class AoC2020_06
 {
     List<String> list;
     
     /**
      * Konstruktor für Objekte der Klasse AoC2019_06
      */
-    public AoC2019_06()
+    public AoC2020_06()
     {
         // Datei holen und Zeilenweise speichern
         ReadFile a =new ReadFile("input06.txt");

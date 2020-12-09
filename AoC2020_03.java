@@ -1,14 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.awt.Point;
+import java.util.*;
 
 /**
- * Beschreiben Sie hier die Klasse AoC2019_03.
+ * Beschreiben Sie hier die Klasse AoC2020_03.
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
-public class AoC2019_03
+ * @author Stefan
+ * @version 20201203
+ *   
+   */
+
+public class AoC2020_03
 {
     List<String> list;
     char[][] trees;
@@ -16,7 +16,7 @@ public class AoC2019_03
     /**
      * Konstruktor für Objekte der Klasse AoC2019_03
      */
-    public AoC2019_03()
+    public AoC2020_03()
     {
         // Datei holen und Zeilenweise speichern
         ReadFile a =new ReadFile("input03.txt");
@@ -25,10 +25,7 @@ public class AoC2019_03
         for (int y = 0; y < list.size(); y++)
         {
             trees[y] = list.get(y).toCharArray();
-            // System.out.println(list.get(y));
         }
-        // 3 nach rechts 
-        // 1 nach unten
         int count;
         int i;
         int j;
@@ -61,15 +58,5 @@ public class AoC2019_03
             System.out.println("alle:"+alle);
         }
         System.out.println("alle:"+alle);
-        /*        
-        for (int i =0;i<trees.length;++i){
-            for (int j =0;j<trees[i].length;j++){
-                System.out.print(i+"/"+j+" ");
-                System.out.print(trees[i][j]);
-            }      
-        }
-        */
     }
 }
-         
-

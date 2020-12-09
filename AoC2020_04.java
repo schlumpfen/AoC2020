@@ -8,14 +8,14 @@ import java.util.regex.Pattern;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class AoC2019_04
+public class AoC2020_04
 {
     List<String> list;
     
     /**
      * Konstruktor für Objekte der Klasse AoC2019_04
      */
-    public AoC2019_04()
+    public AoC2020_04()
     {
         // Datei holen und Zeilenweise speichern
         ReadFile a =new ReadFile("input04.txt");
