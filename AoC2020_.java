@@ -24,6 +24,16 @@ public class AoC2020_
         {
             System.out.println("Zeile "+y+" "+list.get(y));
         }
-        
+        silber();
+        gold();
+    }
+    public void silber()
+    {
+    
+    }
+    public void gold()
+    {
+    
+    
     }
 }
