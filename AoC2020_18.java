@@ -21,13 +21,16 @@ public class AoC2020_18
         // Datei holen und Zeilenweise speichern
         ReadFile a =new ReadFile("input18.txt");
         list = a.gibArray();
+        /*
         for (int y = 0; y < list.size(); y++)
         {
             System.out.println("Zeile "+y+" "+list.get(y));
         }
-        // silber();
+        */
+        silber();
         gold();
     }
+
     public void silber()
     {
         BigInteger summe =BigInteger.valueOf(0);
@@ -35,15 +38,14 @@ public class AoC2020_18
         {
             summe = summe.add(calc(list.get(y)));
         }
-        
         System.out.println("silber: " + summe);
     }
+
     public void gold()
     {
         BigInteger summe =BigInteger.valueOf(0);
         for (int y = 0; y < list.size(); y++)
         {
-            System.out.println("\nStart "+list.get(y));
             summe = summe.add(calcgold(list.get(y)));
         }
         
@@ -60,11 +62,12 @@ public class AoC2020_18
             // innerste Klammer auf 
             int klammerauf = zeile.lastIndexOf("(");
             int klammerzu = zeile.indexOf(")", klammerauf+1);
-            // System.out.println(zeile.substring(klammerauf+1,klammerzu));
             value = calc(zeile.substring(klammerauf+1,klammerzu));
             // Klammerauswertung in zeile ersetzen
             zeile = zeile.substring(0, klammerauf) + value + zeile.substring(klammerzu+1);
         }
+
+        // Zerlegen in Operatoren und Operanden
         String[] ops = zeile.split(" ");
         BigInteger wert = BigInteger.valueOf(Integer.parseInt(ops[0]));
         for(int j=1; j<ops.length;j+=2){
@@ -77,8 +80,7 @@ public class AoC2020_18
                 break;
             }
         }    
-        // Zerlegen in Operatoren und Operanden
-        System.out.println(zeile + " " + wert);
+
         return wert;
     }
     
@@ -91,7 +93,6 @@ public class AoC2020_18
             // innerste Klammer auf 
             int klammerauf = zeile.lastIndexOf("(");
             int klammerzu = zeile.indexOf(")", klammerauf+1);
-            // System.out.println(zeile.substring(klammerauf+1,klammerzu));
             value = calcgold(zeile.substring(klammerauf+1,klammerzu));
             // Klammerauswertung in zeile ersetzen
             zeile = zeile.substring(0, klammerauf) + value + zeile.substring(klammerzu+1);
@@ -158,8 +159,6 @@ public class AoC2020_18
                 }
             }    
         }
-        // Zerlegen in Operatoren und Operanden
-        System.out.println(zeile + " " + wert);
         return wert;
     }
 }
