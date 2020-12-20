@@ -1,4 +1,6 @@
 import java.util.*;
+import lib.*;
+
 
 /**
  * Beschreiben Sie hier die Klasse AoC2020_12.
@@ -25,7 +27,7 @@ public class AoC2020_12
     }
     public void silber()
     {   
-        AoC2020_12_ship a = new AoC2020_12_ship();
+        ship a = new ship();
         for (int y = 0; y < list.size(); y++)
         {
             a.bewegen(list.get(y));

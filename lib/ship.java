@@ -1,3 +1,5 @@
+package lib;
+
 import static java.lang.Math.*;
 /**
  * Beschreiben Sie hier die Klasse AoC2020_12_ship.
@@ -5,7 +7,7 @@ import static java.lang.Math.*;
  * @author Stefan
  * @version 20201212
  */
-public class AoC2020_12_ship
+public class ship
 {
     private int pos_x;      // Position X (West - Ost)
     private int pos_y;      // Position Y (Nord - Sued)
@@ -15,13 +17,13 @@ public class AoC2020_12_ship
     
     private int richtung;     // 0 = Ost, 1 = Süd, 2=West, 3 = Nord
 
-    public AoC2020_12_ship()
+    public ship()
     {
         this(0,0,0);
         
     }
     
-    public AoC2020_12_ship(int startx, int starty, int richtung){
+    public ship(int startx, int starty, int richtung){
         pos_x = startx;
         pos_y = starty;
         
