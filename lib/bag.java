@@ -24,11 +24,22 @@ public class bag
         bags = new HashMap<bag, Integer>();
     }
     
+    public bag(String color)
+    {
+        this();
+        this.color = color;
+    }
+    
     private void add(bag bag){
         // check bags
     }
     
     public boolean check(bag bag)
+    {
+        return false;
+    }
+    
+    public boolean check(String color)
     {
         return false;
     }
